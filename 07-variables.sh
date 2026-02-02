@@ -7,5 +7,5 @@ echo "who is running :$USER"
 echo "home directory of the current user :$HOME"
 echo "PID of the script :$$"
 sleep 100&
-echo "PID of recently executed script :$!"
-echo "all args passed to script :$@"
+echo "PID of recently executed  background process :$!"
+echo "all args passed to script :$*"
