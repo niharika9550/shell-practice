@@ -4,8 +4,8 @@ NUM2=siva
 SUM=$(($NUM1+$NUM2))
 echo "SUM=$SUM"
 #array
-FRUITS=("Apple","mango" "banana")
-echo "fruit are :${fruits[@]}"
+FRUITS=("Apple","mango" ",banana")
+echo "fruit are :${FRUITS[@]}"
 echo "first fruit is: ${FRUITS[0]}"
 echo "second fruit is :${FRUITS[1]}"
-echo  "thir fruit is :{FRUITS[2]}"
+echo  "third fruit is :${FRUITS[2]}"
