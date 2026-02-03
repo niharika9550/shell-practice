@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]; then
    echo "please login with root user access"
    exit 1
 fi
-mkdir -p $LOGS-FOLDER
+mkdir -p $LOGS_FOLDER
 VALIDATE(){
     #$1 means exit status of last executed command
     #$2 means message to be displayed
