@@ -20,6 +20,8 @@ VALIDATE(){
     fi
 }
 for package in $@ 
-dnf install $package -y &>> $LOG_FILE
-VALIDATE $? "$package installation"
+do
+    dnf install $package -y &>> $LOG_FILE
+    VALIDATE $? "$package installation"
+done
   
