@@ -12,7 +12,7 @@ fi
 mkdir -p $LOGS_FOLDER
 #validate means to check whether the command is success or failure
 VALIDATE(){    
-    if  [$1 -ne 0 ]; then
+    if  [ $1 -ne 0 ]; then
        echo "$2..... FAILURE" | tee -a $LOGS_FILE
        exit 1
     else
